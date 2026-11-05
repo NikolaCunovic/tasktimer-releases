@@ -9,9 +9,11 @@ A small Windows app for tracking time on tasks and logging it to Redmine.
 - Start and stop a timer on a task. It lives in the tray, has global hotkeys (Ctrl+Alt+Space start/stop, Ctrl+Alt+T show/hide) and a small always-on-top bar (Ctrl+Alt+M).
 - Pulls the Redmine issues assigned to you into a backlog.
 - **Log time** turns a day's tracked time into Redmine time entries: rounded to half hours, filled up to 8 hours, with comments taken from your notes. You review everything before it's sent.
+- Time you already logged in Redmine, also on its website, is counted, so nothing gets logged twice.
 - Marking an issue Done can close it in Redmine and log the time in one step.
-- A week strip shows which days are logged. Croatian public holidays and your own days off are left out.
+- A week strip shows which days are logged (full, partly or not at all), with arrows to earlier weeks. Croatian public holidays and your own days off are left out.
 - Optional daily and weekly reports into Joplin.
+- Updates itself: when a new version is out, a band at the top offers **Update and restart**.
 
 ## Install
 
@@ -24,11 +26,13 @@ A small Windows app for tracking time on tasks and logging it to Redmine.
 
 - Tasks, time and notes: `%APPDATA%\TaskTimer\`, with a daily backup kept for 14 days.
 - Your Redmine API key: Windows Credential Manager, never in a file.
-- The app talks only to your Redmine and, if you connect it, to Joplin on your own PC. There's no account, cloud or tracking.
+- The app talks only to your Redmine, to GitHub to check for a new version (nothing about you is sent), and to Joplin on your own PC if you connect it. There's no account, cloud or tracking.
 
 ## Updating
 
-Right-click the tray icon and choose **Quit**, replace `TaskTimer.exe` with the new download, and start it again. Your data is kept. Your version is shown at the bottom left of **Settings**.
+From version 2.2.0 on, Task Timer checks for a new version when it starts and once a day. When one is out, click the band at the top and choose **Update and restart**; your data is kept. You can also check in **Settings**, next to the version number at the bottom left.
+
+On an older version, or if updating doesn't work: right-click the tray icon, choose **Quit**, replace `TaskTimer.exe` with the new download, and start it again.
 
 ## Requirements
 
