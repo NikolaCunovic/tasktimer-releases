@@ -6,7 +6,7 @@ A small Windows app for tracking time on tasks and logging it to Redmine.
 
 ## What it does
 
-- Start and stop a timer on a task. It lives in the tray, has global hotkeys (Ctrl+Alt+Space start/stop, Ctrl+Alt+T show/hide) and a small always-on-top bar (Ctrl+Alt+M).
+- Start and stop a timer on a task. It lives in the tray, has global hotkeys (Ctrl+Alt+Space start/stop, Ctrl+Alt+T show/hide, Ctrl+Alt+J switch task, Ctrl+Alt+N quick note; change them in Settings › General) and a small always-on-top bar (Ctrl+Alt+M).
 - Pulls the Redmine issues assigned to you into a backlog.
 - Checks for new issues every 5 minutes while you work and pops them up on a card, with **Start**, **Take it** and **Open**.
 - **Log time** turns a day's tracked time into Redmine time entries: rounded to half hours, filled up to 8 hours, with comments taken from your notes. You review everything before it's sent.
